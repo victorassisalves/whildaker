@@ -14,6 +14,7 @@ h1{
 
 section.whildaker{
     background-size: cover;
+    background-position: center center;
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../img/gearvr.png);
     background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../img/gearvr.png);
     background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../img/gearvr.png);
@@ -38,7 +39,13 @@ div.container{
     padding: 0 3rem;
 
 }
-
+.dropdown{
+    display: none;
+    position: absolute;
+}
+.whildaker a{
+    align-self: flex-end;
+}
 .container nav ul li{
     display: inline-block;
     padding: 1rem;
@@ -52,6 +59,12 @@ div.container{
 .container nav a:hover{
     color: #d1dd62;
 }
+.dropdown-list{
+    display: none;
+}
+.dropdown-list span{
+    font-size: 3rem;
+}
 .whildaker h1{
     display: inline-block;
     margin-right: auto;
@@ -63,11 +76,10 @@ div.container{
     align-self: center;
     width: 50%;
     height: 10rem;
-    padding: 6rem;
+    padding: 4rem 0 3rem 4rem ;
 }
 .textwhildaker p{
     margin-left: 3rem;
-    height: 5rem;
     font-size: 1.8rem;
     display: block;
     color: #fff;
@@ -77,6 +89,17 @@ div.container{
 #escritorio, #arquitetura{
     display: flex;
     align-items: center;
+}
+.escritorio{
+    flex-direction: row-reverse;
+}
+
+.escritorio .fundobranco{
+    padding-right: 0;
+    align-self: flex-end;
+}
+.arquitetura .fundobranco{
+    padding-left: 0;
 }
 .arquitetura a{
     display: inline-block;
@@ -91,14 +114,22 @@ div.container{
 div.fundobranco{
     justify-self: center;
     align-self: center;
-    padding: 6rem;
+    padding: 0 5rem;
+    width: 60%;
+    height: 35rem;
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
 }
 .fundobranco h1{
     font-size: 2rem;
     font-weight: bold;
+    justify-content: space-between;
 }
 .fundobranco p{
-    padding: 1rem 0;
+    padding: 0.7rem 0;
+    color: #6a6a6a;
+    font-family: sans-serif;
 }
 .img{
     width: 80%;
@@ -112,9 +143,6 @@ div.fundobranco{
     object-fit: cover;
 }
 
-#arquitetura{
-    flex-direction: row-reverse;
-}
 section#contato{
     background-size: cover;
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.95)), url(../img/Stack_of_firewood.png);
@@ -156,4 +184,38 @@ section#contato{
     text-decoration: none;
     color: #fff;
     font-weight: bold;
+}
+
+                                                /*media query*/
+
+@media screen and (max-width: 768px) {
+    .nodropdown{
+        display: none;
+    }
+    .dropdown-list{
+        display: block;
+    }
+    .container header nav .dropdown li{
+        display: block;
+        padding: 0.5rem;
+    }
+    .material-icons{
+        cursor: default;
+    }
+    .whildaker p{
+        font-size: 1.4rem;
+    }
+    #arquitetura, #escritorio{
+        flex-direction: column;
+        height: 40rem;
+        justify-content: center;
+    }
+    .escritorio div.fundobranco, .arquitetura div.fundobranco{
+        padding: 0;
+        width: 80%;
+        align-self: center;
+        min-height: 0;
+        height: auto;
+        margin-bottom: 2rem;
+    }
 }

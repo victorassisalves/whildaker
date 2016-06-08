@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/reset.css" type="text/css" media="screen"/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+          rel="stylesheet">
     <link rel="stylesheet" href="css/style.css" type="text/css" media="screen"/>
     <title>Whildaker</title>
 </head>
@@ -13,7 +15,13 @@
             <h1>WHILDAKER</h1>
 
             <nav>
-                <ul>
+                <ul class="nodropdown">
+                    <li><a href="#escritorio">Escritório</a></li>
+                    <li><a href="#arquitetura">Projetos</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+                <a class="dropdown-list"><span class="material-icons">toc</span></a>
+                <ul class="dropdown">
                     <li><a href="#escritorio">Escritório</a></li>
                     <li><a href="#arquitetura">Projetos</a></li>
                     <li><a href="#contato">Contato</a></li>
@@ -26,28 +34,31 @@
     </div>
 </section>
 <section class="escritorio" id="escritorio">
-    <div class="img">
-        <img src="img/beardclub.png" alt="Membros do escritório Whildaker">
-    </div>
-    <div class="fundobranco">7
+
+    <div class="fundobranco">
 
         <h1>ESCRITÓRIO</h1>
-        <p>"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est".</p>
-        <p>"Qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"</p>
+        <p>"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est".</p>
+        <p>"Qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel"</p>
+    </div>
+
+    <div class="img">
+        <img src="img/beardclub.png" alt="Membros do escritório Whildaker">
     </div>
 
 </section>
 
 <section class="arquitetura" id="arquitetura">
-    <div class="img">
-        <img src="img/woodoffice.png" alt="Escritório Whildaker">
-    </div>
+
     <div class="fundobranco">
         <div class="texto">
             <h1>ARQUITETURA</h1>
             <p>We make all types of wooden decor as per design given by Architect, interior designer, contractor which is suitable your premises</p>
         </div>
         <a href="#arquitetura">CONFIRA MAIS</a>
+    </div>
+    <div class="img">
+        <img src="img/woodoffice.png" alt="Escritório Whildaker">
     </div>
 </section>
 
@@ -62,5 +73,7 @@
         </ul>
     </div>
 </section>
+<script src="https://code.jquery.com/jquery-2.2.4.min.js" type="text/javascript"></script>
+<script src="js/app.js" type="text/javascript"></script>
 </body>
 </html>
