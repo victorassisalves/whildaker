@@ -8,12 +8,6 @@ section{
     height: 35rem;
 }
 
-.lineH{
-    height: 2px;
-    width: 55%;
-    margin-right: auto;
-    background-color: #f0ff95;
-}
 h1{
     display: inline-block;
     font-size: 1rem;
@@ -35,7 +29,8 @@ section.whildaker{
 div.container{
     display: flex;
     flex-wrap: wrap;
-    height: 35rem;
+    width: 85%;
+    margin: 0 auto;
 }
 
 .container header{
@@ -44,8 +39,19 @@ div.container{
     justify-content: space-around;
     align-items: center;
     height: 5rem;
-    padding: 0 3rem;
+}
 
+.lineH{
+    height: 2px;
+    width: 0;
+    margin: 0 1.5rem;
+    background-color: #f0ff95;
+}
+.lineV{
+    width: 2px;
+    height: 0;
+    margin: 1.5rem 0;
+    background-color: #f0ff95;
 }
 .dropdown{
     display: none;
@@ -67,6 +73,9 @@ div.container{
 .container nav a:hover{
     color: #d1dd62;
 }
+.nodropdown{
+    width: 18rem;
+}
 .dropdown-list{
     display: none;
 }
@@ -80,14 +89,13 @@ div.container{
     font-size: 2rem;
 }
 .textwhildaker{
-    justify-self: center;
-    align-self: center;
     width: 50%;
     height: 10rem;
-    padding: 4rem 0 3rem 4rem ;
+    padding: 4rem 0 3rem 5rem ;
 }
 .textwhildaker p{
-    margin-left: 3rem;
+    margin-top: 8rem;
+
     font-size: 1.8rem;
     display: block;
     color: #fff;
