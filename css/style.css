@@ -1,3 +1,4 @@
+
 body{
     background-color: rgba(205, 205, 205, 0.2);
 }
@@ -7,12 +8,19 @@ section{
     height: 35rem;
 }
 
+.lineH{
+    height: 2px;
+    width: 55%;
+    margin-right: auto;
+    background-color: #f0ff95;
+}
 h1{
     display: inline-block;
     font-size: 1rem;
 }
 
 section.whildaker{
+    width: 100%;
     background-size: cover;
     background-position: center center;
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../img/gearvr.png);
@@ -144,6 +152,7 @@ div.fundobranco{
 }
 
 section#contato{
+    width: 100%;
     background-size: cover;
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.95)), url(../img/Stack_of_firewood.png);
     background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.95)), url(../img/Stack_of_firewood.png);
