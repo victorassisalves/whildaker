@@ -25,14 +25,36 @@ function drawLine(){
     console.log(divHeight);
     $(".lineH").css({
         width: '100%',
-        'transition': '15s'
+        'transition-duration': '15s'
+    });
+    $(".lineH2").css({
+        width: '100%',
+        'transition': '2s ease 2s'
+    });
+    $(".lineV").css({
+        height: '85%',
+        transition: '3s',
+        'margin-botton': '2rem'
     });
 
-    $(".lineV").animate({
-        height: 'divHeight',
-        transition: '3s'
+    var string = $('.textwhildaker p').html();
+    $('.textwhildaker p').html("");
+    var q = jQuery.map(string.split(''), function (letter) {
 
+        return $('<span>'+letter+'</span>');
     });
+
+    var destination = $('.textwhildaker');
+
+    var c = 0;
+
+    var i = setInterval(function () {
+
+        q[c].appendTo(destination).hide().fadeIn(100);
+        c += 1;
+
+        if (c >= q.length) clearInterval(i);
+    }, 10);
     //quando as linha atingirem o ponto final, mostrar o menu.
 };
 

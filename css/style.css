@@ -50,14 +50,17 @@ div.container{
 }.lineH2{
     align-self: flex-end;
     height: 2px;
-    width: 250px;
+    width: 0px;
     margin-bottom: 2rem;
     background-color: #f0ff95;
 }
 .lineV{
-    align-self: flex-start;
+    position: absolute;
+    overflow: hidden;
+    left: 7.5%;
+    top: 4.5rem;
     width: 2px;
-    height: 1px;
+    height: 0;
     margin: 0 0 1.5rem 0;
     background-color: #f0ff95;
 }
@@ -99,14 +102,19 @@ div.container{
     font-size: 2rem;
 }
 .textwhildaker{
-    width: 50%;
     height: 10rem;
-    padding: 4rem 0 3rem 5rem ;
+    width: 100%;
+    padding: 4rem 8rem 3rem 5rem ;
 }
 .textwhildaker p{
-    margin-top: 3rem;
     font-size: 1.8rem;
-    display: block;
+    display: none;
+    color: #fff;
+    font-weight: 500;
+}
+.textwhildaker span{
+    font-size: 1.8rem;
+    display: none;
     color: #fff;
     font-weight: 500;
 }
@@ -228,8 +236,11 @@ section#contato{
     .material-icons{
         cursor: default;
     }
+    .textwhildaker{
+        padding: 4rem;
+    }
     .whildaker p{
-        font-size: 1.4rem;
+        font-size: 1.5rem;
     }
     #arquitetura, #escritorio{
         flex-direction: column;
