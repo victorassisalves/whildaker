@@ -17,24 +17,26 @@ function resizeDiv() {
     vph = $(window).height();
     $('#whildaker').css({'height': vph + 'px'});
     $('#linhaHome').css({'height': vph + 'px'});
+    $('#contato').css({'height': vph + 'px'});
 };
 
 // quando a página carregar começar o evento de desenhar as linhas na primeira section.
 function drawLine(){
-    var divHeight = $('#linhaHome').css("height");
-    console.log(divHeight);
     $(".lineH").css({
         width: '100%',
-        'transition-duration': '15s'
+        'transition-duration': '7.7s'
     });
     $(".lineH2").css({
         width: '100%',
-        'transition': '2s ease 2s'
+        'transition': '1s ease 0.72s'
     });
     $(".lineV").css({
         height: '85%',
-        transition: '3s',
-        'margin-botton': '2rem'
+        transition: '1s'
+    });
+    $(".lineV2").css({
+        height: '85%',
+        transition: '1s ease 1.72s'
     });
 
     var string = $('.textwhildaker p').html();
@@ -54,8 +56,10 @@ function drawLine(){
         c += 1;
 
         if (c >= q.length) clearInterval(i);
-    }, 10);
+    }, 20);
     //quando as linha atingirem o ponto final, mostrar o menu.
+
+    $(".nodropdown").delay(2500).fadeIn();
 };
 
 //quando o usuário rolar para a sessão de baixo, identificar a posição

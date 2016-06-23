@@ -58,10 +58,17 @@ div.container{
     position: absolute;
     overflow: hidden;
     left: 7.5%;
-    top: 4.5rem;
+    bottom: 2rem;
     width: 2px;
     height: 0;
-    margin: 0 0 1.5rem 0;
+    background-color: #f0ff95;
+}
+.lineV2{
+    position: absolute;
+    right: 7.5%;
+    bottom: 2rem;
+    width: 2px;
+    height: 0;
     background-color: #f0ff95;
 }
 .dropdown{
@@ -89,6 +96,7 @@ div.container{
 }
 .nodropdown{
     width: 18rem;
+    display: none;
 }
 .dropdown-list{
     display: none;
