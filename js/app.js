@@ -16,18 +16,22 @@ window.onresize = function(event) {
 function resizeDiv() {
     vph = $(window).height();
     $('#whildaker').css({'height': vph + 'px'});
+    $('#linhaHome').css({'height': vph + 'px'});
 };
- var divHeight = $('#linhaHome').css("height");
+
 // quando a página carregar começar o evento de desenhar as linhas na primeira section.
 function drawLine(){
+    var divHeight = $('#linhaHome').css("height");
+    console.log(divHeight);
     $(".lineH").css({
-        width: '+=50%',
-        "text-align": 'left',
-        transition: '3s'
+        width: '100%',
+        'transition': '15s'
     });
+
     $(".lineV").animate({
-        heigth: "divHeight",
+        height: 'divHeight',
         transition: '3s'
+
     });
     //quando as linha atingirem o ponto final, mostrar o menu.
 };
