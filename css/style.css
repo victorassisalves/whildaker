@@ -161,6 +161,7 @@ div.fundobranco{
     display: flex;
     align-content: center;
     flex-wrap: wrap;
+    position: relative;
 }
 .fundobranco h1, p{
     opacity: 0;
@@ -178,22 +179,21 @@ div.fundobranco{
 .lineHEsc{
     position: absolute;
     width: 0px;
-    right: -70px;
+    left: -40px;
     height: 1px;
     background-color: #000;
-    top: 20%;
+    top: 35%;
 }
 .lineHEsc2{
     position: absolute;
     width: 0px;
-    right: -70px;
-    top: 30%;
+    left: 20px;
+    top: 40%;
     height: 2px;
     background-color: #ffcd57;
 }
 .img{
     width: 80%;
-    position: relative;
 }
 .img img{
     border-radius: 2%;

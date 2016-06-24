@@ -105,7 +105,7 @@ $(document).scroll(function () { // oscultador de scroll
                 transition: '1s',
                 width: '40px'
             });
-            $(".fundobranco h1, .fundobranco p").animate({opacity: 1}, 'slow');
+            $(".fundobranco h1, .fundobranco p").delay(500).animate({opacity: 1}, 'slow');
         }
 
     }
